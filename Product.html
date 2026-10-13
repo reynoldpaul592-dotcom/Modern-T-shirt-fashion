@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Products | Fashion Store</title>
+<meta name="description" content="Browse men's, women's, oversized, graphic and plain T-shirts.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="logo" href="index.html">FASHION<span>STORE</span></a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Product.html" aria-current="page">Product</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <!-- Search is visual only. Real search needs JavaScript or a backend. -->
+  <form class="search" action="#" role="search">
+    <input type="search" placeholder="Search T-shirts..." aria-label="Search products">
+    <button type="submit">Search</button>
+  </form>
+  <div class="icons">
+    <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a>
+    <a class="bag" href="#" aria-label="Shopping bag">🛍 <span>0</span></a>
+  </div>
+</div></header>
+
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <h1>Our T-Shirt Collection</h1>
+  <p class="lead center">Pick a category below. The filter works with pure CSS (no JavaScript).</p>
+  <div class="promo">Free styling inspiration with every order - sample promotion banner</div>
+</div></section>
+
+<!-- Category anchors: the CSS in style.css hides cards that don't match the chosen one. -->
+<section class="section"><div class="wrap">
+  <nav class="filters" aria-label="Product categories">
+    <a href="#all">All Products</a><a href="#men">Men's</a><a href="#women">Women's</a>
+    <a href="#oversized">Oversized</a><a href="#graphic">Graphic</a><a href="#plain">Plain</a>
+    <a href="#printed">Printed</a><a href="#new">New Arrivals</a>
+  </nav>
+  <span id="all"></span><span id="men"></span><span id="women"></span><span id="oversized"></span>
+  <span id="graphic"></span><span id="plain"></span><span id="printed"></span><span id="new"></span>
+
+  <!-- To edit a product: change the image, name, description or price below. -->
+  <div class="grid products">
+    <article class="card men plain best"><span class="badge">Best Seller</span><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=70" alt="Classic Black Tee" loading="lazy"><div class="info"><span class="tag">Men's · Plain</span><h3>Classic Black Tee</h3><p>Soft cotton, timeless fit.</p><p class="price">Rs. 1,499</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card men plain"><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=70" alt="Classic White Tee" loading="lazy"><div class="info"><span class="tag">Men's · Plain</span><h3>Classic White Tee</h3><p>A crisp everyday essential.</p><p class="price">Rs. 1,399</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card oversized graphic new"><span class="badge">New</span><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=70" alt="Oversized Graphic Tee" loading="lazy"><div class="info"><span class="tag">Oversized · Graphic</span><h3>Oversized Graphic Tee</h3><p>Relaxed fit, bold print.</p><p class="price">Rs. 2,299</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card plain men women best"><span class="badge">Best Seller</span><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=70" alt="Essential Cotton Tee" loading="lazy"><div class="info"><span class="tag">Plain · Unisex</span><h3>Essential Cotton Tee</h3><p>Lightweight and breathable.</p><p class="price">Rs. 1,299</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card women plain"><img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=600&q=70" alt="Women's Fitted Tee" loading="lazy"><div class="info"><span class="tag">Women's · Plain</span><h3>Women's Fitted Tee</h3><p>Flattering, stretchy cotton blend.</p><p class="price">Rs. 1,599</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card women new"><span class="badge">New</span><img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?auto=format&fit=crop&w=600&q=70" alt="Women's Cropped Tee" loading="lazy"><div class="info"><span class="tag">Women's</span><h3>Cropped Boxy Tee</h3><p>Short length, relaxed shape.</p><p class="price">Rs. 1,499</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card oversized"><img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=600&q=70" alt="Drop Shoulder Tee" loading="lazy"><div class="info"><span class="tag">Oversized</span><h3>Drop Shoulder Tee</h3><p>Roomy fit with a streetwear feel.</p><p class="price">Rs. 2,499</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card printed graphic"><img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=600&q=70" alt="Street Print Tee" loading="lazy"><div class="info"><span class="tag">Printed · Graphic</span><h3>Street Print Tee</h3><p>Urban-inspired chest print.</p><p class="price">Rs. 1,899</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card graphic printed new"><span class="badge">New</span><img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=600&q=70" alt="Retro Wave Tee" loading="lazy"><div class="info"><span class="tag">Graphic · Printed</span><h3>Retro Wave Tee</h3><p>Vintage-style artwork.</p><p class="price">Rs. 1,999</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card plain men"><img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=600&q=70" alt="Heather Gray Basic Tee" loading="lazy"><div class="info"><span class="tag">Plain · Men's</span><h3>Heather Gray Basic Tee</h3><p>A soft neutral for layering.</p><p class="price">Rs. 1,349</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card women printed"><img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?auto=format&fit=crop&w=600&q=70" alt="Minimal Print Tee" loading="lazy"><div class="info"><span class="tag">Women's · Printed</span><h3>Minimal Print Tee</h3><p>Small, subtle front print.</p><p class="price">Rs. 1,799</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+    <article class="card oversized men best new"><span class="badge">Best Seller</span><img src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=600&q=70" alt="Boxy Oversized Tee" loading="lazy"><div class="info"><span class="tag">Oversized · Men's</span><h3>Boxy Oversized Tee</h3><p>Heavyweight cotton, boxy cut.</p><p class="price">Rs. 2,399</p><a class="btn btn-sm" href="#">View Product</a></div></article>
+  </div>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap grid foot">
+  <div><a class="logo" href="index.html">FASHION<span>STORE</span></a><p>Premium everyday T-shirts for every style.</p></div>
+  <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+  <div><h4>Categories</h4><a href="products.html#men">Men's</a><a href="products.html#women">Women's</a><a href="products.html#oversized">Oversized</a><a href="products.html#graphic">Graphic</a></div>
+  <div><h4>Contact</h4><p>hello@fashionstore.example</p><p>+92 300 0000000</p><p>Karachi, Pakistan</p><p><a href="#">Instagram</a> · <a href="#">Facebook</a></p></div>
+</div><p class="copy">© 2026 Fashion Store. All rights reserved.</p></footer>
+</body>
+</html>

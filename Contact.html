@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Fashion Store</title>
+<meta name="description" content="Get in touch with Fashion Store.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><div class="wrap bar">
+  <a class="logo" href="index.html">FASHION<span>STORE</span></a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle">
+  <label for="menu-toggle" class="menu-btn" aria-label="Open menu">☰</label>
+  <nav class="nav" aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="Product.html">Product</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+  <!-- Search is visual only. Real search needs JavaScript or a backend. -->
+  <form class="search" action="#" role="search">
+    <input type="search" placeholder="Search T-shirts..." aria-label="Search products">
+    <button type="submit">Search</button>
+  </form>
+  <div class="icons">
+    <a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">FB</a>
+    <a class="bag" href="#" aria-label="Shopping bag">🛍 <span>0</span></a>
+  </div>
+</div></header>
+
+<main id="main">
+<section class="page-hero"><div class="wrap">
+  <h1>We’d Love to Hear From You.</h1>
+  <p class="lead center">Questions, feedback or ideas? Send us a message and we’ll get back to you.</p>
+</div></section>
+
+<section class="section"><div class="wrap grid contact">
+  <!-- HTML alone can't send messages. Replace action="#" with a form service URL (e.g. Formspree) or your backend. -->
+  <form class="form" action="#" method="post">
+    <label for="name">Full Name</label>
+    <input id="name" name="name" type="text" placeholder="Your full name" required>
+    <label for="email">Email Address</label>
+    <input id="email" name="email" type="email" placeholder="you@example.com" required>
+    <label for="phone">Phone Number (optional)</label>
+    <input id="phone" name="phone" type="tel" placeholder="+92 300 0000000">
+    <label for="subject">Subject</label>
+    <input id="subject" name="subject" type="text" placeholder="How can we help?" required>
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="6" placeholder="Write your message..." required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+  <aside class="panel info-box">
+    <h2>Contact Information</h2>
+    <p><strong>Email:</strong> hello@fashionstore.example</p>
+    <p><strong>Phone:</strong> +92 300 0000000</p>
+    <p><strong>Address:</strong> 123 Sample Street, Karachi, Pakistan</p>
+    <p><strong>Follow us:</strong> <a href="#">Instagram</a> · <a href="#">Facebook</a> · <a href="#">TikTok</a></p>
+  </aside>
+</div></section>
+
+<section class="section alt"><div class="wrap narrow">
+  <h2 class="title">Frequently Asked Questions</h2>
+  <details><summary>How do I choose my size?</summary><p>Sample answer: add your size guide details here.</p></details>
+  <details><summary>How long does delivery take?</summary><p>Sample answer: add your delivery times here.</p></details>
+  <details><summary>Can I return or exchange an item?</summary><p>Sample answer: add your return policy here.</p></details>
+  <details><summary>How should I wash my T-shirt?</summary><p>Sample answer: add care instructions here.</p></details>
+</div></section>
+</main>
+
+<footer class="footer"><div class="wrap grid foot">
+  <div><a class="logo" href="index.html">FASHION<span>STORE</span></a><p>Premium everyday T-shirts for every style.</p></div>
+  <div><h4>Quick Links</h4><a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="contact.html">Contact</a></div>
+  <div><h4>Categories</h4><a href="products.html#men">Men's</a><a href="products.html#women">Women's</a><a href="products.html#oversized">Oversized</a><a href="products.html#graphic">Graphic</a></div>
+  <div><h4>Contact</h4><p>hello@fashionstore.example</p><p>+92 300 0000000</p><p>Karachi, Pakistan</p><p><a href="#">Instagram</a> · <a href="#">Facebook</a></p></div>
+</div><p class="copy">© 2026 Fashion Store. All rights reserved.</p></footer>
+</body>
+</html>
